@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.container1{
+  /* width: auto; */
+  margin-top: 10%;
+  /* margin-left: 20%; */
+  padding: 40px 20px;
+
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  display:block;
+
+  
+}
+.boxes{
+  
+  width: 150px;
+  height: 200px;
+  display: inline;
+  margin: 5px;
+  padding: 10px 10px;
+  align-items: center;   
+  
+ 
+
+  /*background-color: #334145; */ 
+}
+.box-content{
+  background-color: black;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
+  
+}
+
+#div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

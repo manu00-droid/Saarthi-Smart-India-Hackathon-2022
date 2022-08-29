@@ -1,0 +1,76 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+
+input {
+    width: 140px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid;
+    font-size: 13px;
+    font-family: Arial;
+    float: left;
+}
+
+* {
+    margin: 0;
+}
+
+input:last-child {
+    float: right;
+}
+
+#directionclick {
+    background-color: #462066;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    padding: 4px;
+    text-overflow: ellipsis;
+    width: 80px;
+}
+
+#stepInfo {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-overflow: ellipsis;
+    width: 300px;
+    position: absolute;
+    top: 7px;
+}
+
+.routesegment {
+    background: #462066 none repeat scroll 0 0;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 23px;
+    padding: 6px;
+    width: 290px;
+}
+
+#source:focus {
+    border-color: #462066;
+}
+
+.routeinfo {
+    height: 400px;
+    overflow: auto;
+    padding: 5px;
+    font-size: 13px;
+}

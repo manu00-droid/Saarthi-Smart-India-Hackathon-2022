@@ -1,0 +1,30 @@
+#body {
+    background-image: url(/assets/img/katie-moum-5FHv5nS7yGg-unsplash.jpg) !important;
+    background-size: cover !important;
+    backdrop-filter: blur(5px);
+    height: 100% !important;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+  }
+  
+    /* #preloader {
+      background: white url(/assets/img/preloader.gif) no-repeat center center;
+      background-size: 100%;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;  
+      z-index: 999999;
+    
+    } */
+
+  #div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Roadmap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="assets/css/style1.css" type="text/css" media="all" />
+    <!-- Include jQuery Roadmap CSS -->
+    <link href="../dist/jquery.roadmap.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body onload="loded()">
+
+    <div id="my-roadmap" style="margin-top:80px;"></div>
+    <div style="padding:20px; margin-top:40px;">
+    <div style="display: flex; justify-content:center; text-align:center; border:solid 2px black; padding:10px;">
+    <form action="submit" method="post">
+        <div style="margin-left:10px; margin-right:10px;">Start Time: <input type="text"><br></div>
+        <div style="margin-left:10px; margin-right:10px;">Metres of road constructed: <input type="text"><br></div>
+        <div style="margin-left:10px; margin-right:10px;">Humidity threshold exceed count: <input type="text"><br></div>
+        <div style="margin-left:10px; margin-right:10px;">Temperature threshold exceed count: <input type="text"><br></div>
+        <div style="margin-left:10px; margin-right:10px;">End Time: <input type="text"><br></div>
+        <div style="margin-left:10px; margin-right:10px;">Phone No: <input type="text"><br></div>
+        <button class="btn btn-primary" style="margin-left:10px;" type="submit">Submit</button>        
+    </form>
+    </div>
+    </div>
+    <style>
+        #export {
+            display:flex; justify-content:center;
+            margin: 20px;
+        }
+    </style>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Include jQuery Roadmap Plugin -->
+    <script src="../dist/jquery.roadmap.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var events = [
+                {
+                    date: 'Q1 - 2022',
+                    content: '<h6>Start Time: 0510</h6><h6>Road Constructed(in m): 7</h6><h6>End Time: 1710</h6><h6>Threshold exceeded(humidity): 4</h6><h6>Threshold exceeded(temp): 2</h6><h6>Phone: 5697813563</h6>'
+                },
+                {
+                    date: 'Q2 - 2022',
+                    content: '<h6>Start Time: 0910</h6><h6>Road Constructed(in m): 4</h6><h6>End Time: 1640</h6><h6>Threshold exceeded(humidity): 2</h6><h6>Threshold exceeded(temp): 1</h6><h6>Phone: 6981334752</h6>'
+                },
+                {
+                    date: 'Q2 - 2022',
+                    content: '<h6>Start Time: 0750</h6><h6>Road Constructed(in m): 12</h6><h6>End Time: 1915</h6><h6>Threshold exceeded(humidity): 7</h6><h6>Threshold exceeded(temp): 5</h6><h6>Phone: 24689431469</h6>'
+                },
+                {
+                    date: 'Q3 - 2022',
+                    content: '<h6>Start Time: 0630</h6><h6>Road Constructed(in m): 10</h6><h6>End Time: 1710</h6><h6>Threshold exceeded(humidity): 4</h6><h6>Threshold exceeded(temp): 2</h6><h6>Phone: 4567813563</h6>'
+                },
+                {
+                    date: 'Q3 - 2022',
+                    content: '<h6>Start Time: 0510</h6><h6>Road Constructed(in m): 7</h6><h6>End Time: 1710</h6><h6>Threshold exceeded(humidity): 4</h6><h6>Threshold exceeded(temp): 2</h6><h6>Phone: 5697813563</h6>'
+                },
+                
+            ];
+
+            $('#my-roadmap').roadmap(events, {
+                eventsPerSlide: 6,
+                slide: 1,
+                prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+                nextArrow: '<i class="material-icons">keyboard_arrow_right</i>',
+                onBuild: function () {
+                    console.log('onBuild event')
+                }
+            });
+        });
+    </script>
+    <script src="C:\Users\Sukhm\Downloads\s\assets\js\script.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>
